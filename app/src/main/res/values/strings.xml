@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RoomDBTest</string>
+    <string name="enter_phrase">Enter your phrase</string>
+    <string name="enter_button">Add to database</string>
+    <string name="output_button">Get last phrase (alphabetically)</string>
+
+</resources>
