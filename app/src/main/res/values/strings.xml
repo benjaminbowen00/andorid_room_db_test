@@ -3,5 +3,6 @@
     <string name="enter_phrase">Enter your phrase</string>
     <string name="enter_button">Add to database</string>
     <string name="output_button">Get last phrase (alphabetically)</string>
+    <string name="see_all_button">See All</string>
 
 </resources>

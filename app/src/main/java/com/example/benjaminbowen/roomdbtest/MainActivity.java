@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     Button enterButton;
     EditText enterPhrase;
     Button outputButton;
+    Button seeAllButton;
     AppDatabase db;
     private static final String TAG = "MainActivity";
 
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         enterPhrase = findViewById(R.id.enter_phrase);
         outputPhrase = findViewById(R.id.output_phrase);
         outputButton = findViewById(R.id.output_button);
+        seeAllButton = findViewById(R.id.see_all_button);
 
 
         db = Room.databaseBuilder(getApplicationContext(), AppDatabase.class, "phrases")
@@ -61,5 +63,11 @@ public class MainActivity extends AppCompatActivity {
                 outputPhrase.setText(lastPhrase);
             }
         });
+    }
+
+    public void seeAllList(View view){
+
+        Intent intent = new Intent(this, FullListActivity.class);
+        startActivity(intent);
     }
 }
